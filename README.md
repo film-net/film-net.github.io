@@ -1,4 +1,4 @@
-# Nerfies
+# FILM: Frame Interpolation for Large Motion
 
 This is the repository that contains source code for the [FILM website](https://film-net.github.io).
 
