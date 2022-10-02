@@ -215,15 +215,14 @@
         <h2 class="title is-2">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present a frame interpolation algorithm that synthesizes multiple intermediate frames from two input images with large in-between motion.
-            Recent methods use multiple networks to estimate optical flow or depth and a separate network dedicated to frame synthesis. 
-            This is often complex and requires scarce optical flow or depth ground-truth. 
-            In this work, we present a single unified network, distinguished by a multi-scale feature extractor that shares weights at all scales, and is trainable from frames alone.
-            To synthesize crisp and pleasing frames, we propose to optimize our network with the Gram matrix loss that measures the correlation difference between feature maps. 
-            Our approach outperforms state-of-the-art methods on the Xiph large motion benchmark. 
-            We also achieve higher scores on Vimeo-90K, Middlebury and UCF101, when comparing to methods that use perceptual losses. 
-            We study the effect of weight sharing and of training with datasets of increasing motion range. 
-            Finally, we demonstrate our model's effectiveness in synthesizing high quality and temporally coherent videos on a challenging near-duplicate photos dataset.
+            We present a frame interpolation algorithm that synthesizes an engaging slow-motion video from near-duplicate photos which often exhibit large scene motion. 
+            Near-duplicates interpolation is an interesting new application, but large motion poses challenges to existing methods. 
+            To address this issue, we adapt a feature extractor that shares weights across the scales, and present a "scale-agnostic" motion estimator. 
+            It relies on the intuition that large motion at finer scales should be similar to small motion at coarser scales, which boosts the number of available pixels for large motion supervision. 
+            To inpaint wide disocclusions caused by large motion and synthesize crisp frames, we propose to optimize our network with the Gram matrix loss that measures the correlation difference between features. 
+            To simplify the training process, we further propose a unified single-network approach that removes the reliance on additional optical-flow or depth network and is trainable from frame triplets alone. 
+            Our approach outperforms state-of-the-art methods on the Xiph large motion benchmark while performing favorably on Vimeo-90K, Middlebury and UCF101. 
+            Codes and pre-trained models are available at https://film-net.github.io.
           </p>
         </div>
       </div>
