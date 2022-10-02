@@ -7,7 +7,7 @@ If you find FILM useful for your work please cite:
 @misc{reda2022film,
   title={FILM: Frame Interpolation for Large Motion},
   author={Fitsum Reda and Janne Kontkanen and Eric Tabellion and Deqing Sun and Caroline Pantofaru and Brian Curless},
-  booktitle = {arXiv},
+  booktitle = {The European Conference on Computer Vision (ECCV)},
   year={2022}
 }
 ```
